@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MY LOGIN PAGE</title>
+<link href="s.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="heading">
+<center>
+
+<h1 > FORM </h1>
+</center>
+</div>
+<div class="login">
+
+<form onsubmit="output()">
+<br>
+
+<input  id="name"  type="text" 
+
+autocomplete="off" placeholder="ENTER YOUR NAME" onfocus="namer()" onkeydown="namer()" onkeyup="namer()">
+
+<br>
+<span id="span1" class="a"> </span>
+<span id="span4" class="b"> </span>
+
+
+<br>
+<br>
+
+<br>
+
+<input  id="reg"  type="text" 
+autocomplete="off" placeholder="ENTER YOUR REGISTERATION NUMBER"  onfocus="identity()" onkeydown="identity()"  onkeyup="identity()">
+<br>
+<span id="span2" class="a" ></span>
+<span id="span5" class="b"> </span>
+
+
+<br>
+<br>
+
+
+<br>
+
+<input  id="email"  type="text" 
+autocomplete="off" placeholder="ENTER YOUR EMAIL:"  onfocus="electronic()"  onkeydown="electronic()"   onkeyup="electronic()">
+
+<br>
+<span id="span3" class="a"> </span>
+<span id="span6" class="b"> </span>
+<br>
+<br>
+<center>
+<input value="submit"  type="submit"  class="btn" > 
+</center>
+</form>
+</div>
+
+<script>
+function namer()
+{var x,p;
+x=document.getElementById('name').value;
+
+
+if(x ==  "")
+{document.getElementById('span4').innerHTML="";
+document.getElementById('span1').innerHTML="** the name field is empty";
+return false;
+}
+
+
+
+if((!isNaN(x)) && x!=0)
+{document.getElementById('span4').innerHTML="";
+document.getElementById('span1').innerHTML="**THE NAME SHOULD ONLY CONTAIN CHARACTERS NOT NUMBERS";
+
+return false;} 
+
+p=/[!@#$%]/g;
+
+if(p.test(x))
+{document.getElementById('span4').innerHTML="";
+document.getElementById('span1').innerHTML="**THE NAME SHOULD ONLY CONTAIN CHARACTERS";
+
+return false;} 
+
+
+
+
+document.getElementById('span1').innerHTML="";
+document.getElementById('span4').innerHTML="SUCCESS";
+}
+function identity()
+{var y;
+y=document.getElementById('reg').value;
+
+ if(y == "")
+{document.getElementById('span5').innerHTML="";
+document.getElementById('span2').innerHTML="** THE REGESTRATION FIELD IS EMPTY";
+return false;}
+
+
+if (y.length!=15) 
+{document.getElementById('span5').innerHTML="";
+document.getElementById('span2').innerHTML="** THE REGESTRATION NUMBER SHOULD HAVE 15 CHARACTER";
+return false;}
+
+if((y.charAt(0)!='r' || y.charAt(1)!='a') && (y.charAt(0)!='R' || y.charAt(1)!='A') )
+{document.getElementById('span5').innerHTML="";
+document.getElementById('span2').innerHTML="** CHECK YOUR STARTING 2 LETTERS";
+return false;}
+
+
+
+if((y == /^[!@#$%^&*()_+-=|\:";'<>/"]+$/))
+{document.getElementById('span5').innerHTML="";
+document.getElementById('span2').innerHTML="** THE REGESTRATION NUMBER SHOULD ONLY CONSIST OF NUMBERS AND CHARACTER";
+return false;}
+
+document.getElementById('span2').innerHTML="";
+
+document.getElementById('span5').innerHTML="SUCCESS";}
+function electronic()
+ 
+{var z;
+z=document.getElementById('email').value;
+
+if(z == "")
+{
+document.getElementById('span3').innerHTML="** THE EMAIL FIELD IS EMPTY";
+return false;}
+
+if((z.indexOf('@')<=0) && z!=0)
+{document.getElementById('span6').innerHTML="";
+document.getElementById('span3').innerHTML="** THE @SYMBOL IS AT WRONG POSITION";
+ return false;}
+
+
+if(((z.charAt(z.length-4)!='.') && (z.charAt(z.length-3)!='.')) && z!=0)
+{document.getElementById('span6').innerHTML="";
+document.getElementById('span3').innerHTML="** THE POSITION OF '.' IS WRONG ";
+
+return false;
+}
+ 
+ document.getElementById('span3').innerHTML="";
+
+document.getElementById('span6').innerHTML=" SUCCESS";
+
+
+
+}
+function output(){
+
+	document.write("YOUR RECORD HAS BEEN RECORDED");
+}
+
+</script>
+</body>
+</html>
