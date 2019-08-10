@@ -1,0 +1,270 @@
+/*@media (max-width: @screen-xs) {
+    body{font-size: 10px;}
+}
+
+@media (max-width: @screen-sm) {
+    body{font-size: 14px;}
+}
+
+body{
+	background-color:blue;
+}*/
+/*h5{
+    font-size: 1.4em;
+}  */
+.carousel_cp
+{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:100%;
+	text-align:center;
+	color:white;
+}
+.helpline{
+    padding-top: 45.65px!important;
+	padding-bottom: 0px!important;
+}
+.tabs{
+	font-size: 20px;
+}
+.bar{
+		padding:0!important;
+		background-color: darkorange;
+	}
+.navibar{
+	background-color:darkorange;
+}
+.togbtn{
+	font-size: 12px!important;
+}
+li a:hover{
+	background-color: orange!important;
+}
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+.slideshow{
+	background-color: black;
+}
+.topBorder{
+	border-top: 6px solid orange;
+}
+.title{
+	text-align:center;
+}
+.cont {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:100%;
+	text-align:center;
+}
+.cont p{
+	font-size:20px;
+	/*display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 216px;
+	margin: 0;*/
+	/*line-height: 3;*/
+}
+
+.hai{
+	object-fit: cover;
+	height:70fvh!important;
+}
+
+.myParent{
+	position: relative;
+}
+.face{
+	font-size: 14px!important;
+	font-weight: 0!important;
+}
+.thumbs{
+	margin: 0!important;
+}
+.thumbs h6{
+	font-size: 1vw;
+}
+.thumbs span{
+	font-size: 1vw;
+}
+.thum{
+	font-size: 1vw;
+}
+.fontu{
+	font-size: 1vw;
+}
+.fontc{
+	color:orange;
+}
+.contentBody{
+	background-color: #ffebd8;
+}
+.abc
+{
+	position: relative;
+
+}
+.abd
+{
+	position: absolute;
+	top: 50%;
+	left: 20%
+}
+
+@media screen and (max-width: 1200px){
+	.helpline{
+		padding-top:32.15px!important;
+		padding-bottom: 0px!important;
+	}
+	.hai{
+		height: 40vh!important;
+	}
+	/*.cont h4{
+	font-size:18px;
+	}
+	.cont h3{
+	font-size: 12px;
+	}*/
+}
+
+@media screen and (max-width: 992px){
+	.helpline{
+		padding-top:30px!important;
+		padding-bottom: 0px!important;
+		font-size:32px!important;
+	}
+	.tabs{
+		font-size: 16px!important;
+	}
+	.in{
+		font-size: 10px!important;
+	}
+	.para{
+		font-size: 12px!important;
+	}
+	.leftSection{
+		display: none;
+	}
+	.hai{
+		height: 60vh!important;
+	}
+}
+@media screen and (max-width: 860px){
+	.hai{
+		height: 35vh!important;
+	}
+}
+
+@media screen and (max-width: 767.9px){
+	.helpline{
+		font-size:26px!important;
+	}
+	.campion{
+		font-size:38px!important;
+	}
+	.tabs{
+		font-size:13px!important;
+	}
+	.bar{
+		padding:0!important;
+	}
+	.in{
+		font-size: 8px!important;
+		padding-left:3px!important;
+		margin-right:4px!important;
+		width: 70px!important;
+		height: 20px!important;
+	}
+	.rightSection{
+		display: none;
+	}
+	.hai{
+		height: 50vh!important;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	.campion{
+		font-size: 32px!important;
+	}
+	.helpline{
+		font-size:26px !important;
+	}
+	
+}
+
+@media screen and (max-width: 575.9px){
+	.tabs{
+		padding-left: 3%!important;
+		padding-bottom: 2%!important;
+	}
+	.in{
+		font-size: 10px!important;
+		width: 30%!important;
+	}
+	.side{
+		padding:0!important;
+		margin:0!important;
+	}
+}
+@media screen and (max-width: 560px){
+	.helpline{
+		padding-top:25px!important;
+		font-size: 20px!important
+	}
+	.slideshow{
+		padding:0!important;
+	}
+	.bullets{
+		margin-bottom: 0;
+	}
+	.bullets li{
+		width:10px;
+	}
+	.caption h3{
+	font-size: 20px;
+	}
+	.caption p{
+	font-size: 15px;
+	}
+	.caption{
+		padding-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 440px){
+	.helpline{
+		font-size:16px !important;
+	}
+	.caption li{
+		font-size: 20px;
+	}
+	.side{
+		padding:0;
+	}
+	.leftSection{
+		display: none; /*whole of the content will be removed  and no space would be left*/
+		/*visibility: hidden; All the contents will be hidden but the space would be left*/
+
+	}
+	/*that border thing was happening because of the container padding, therefore just remove the padding due to contaniner*/
+}
+
+@media screen and (max-width: 360px){
+	.campion{
+		font-size:22px!important;
+	}
+	.helpline{
+		font-size:14px !important;
+	}
+
+}
