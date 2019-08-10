@@ -1,0 +1,21 @@
+.tree{
+	
+	margin-left: 5%;
+	margin-top: 15%;
+}
+
+.pree{
+	
+	margin-right: 5%;
+	margin-top: 15%;
+}
+
+body
+{
+	
+	height: 650px;
+	background-image: linear-gradient(red,lightblue);
+
+
+}
+

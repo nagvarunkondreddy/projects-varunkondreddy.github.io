@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog Page</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+	<link rel="stylesheet" type="text/css" href="td1.css">
+</head>
+<body>
+	<main>
+	<div class="row">
+		<div class="col-6" style=" padding-right:15px;">
+			<div class="card tree" style="">
+		
+		<div class="card-body" style="">
+			<h2 class="card-title text-center"> Sign In</h2>
+			<br>
+	<form class="form-group" style="">
+		<input type="text" name="name" class="form-control" placeholder="Enter Your Name:" onkeypress="validate()" onfocus="validate()">
+		<br>
+		<input type="pasword" name="pass" class="form-control"  placeholder="Enter Your Pasword:">
+		<br>
+		<input type="email" name="ema" class="form-control"  placeholder="Enter Your Email:">
+		<br>
+		<input type="text" name="ag" class="form-control"  placeholder="Enter Your Age:">
+		<br>
+		<input type="submit" name="name" class="form-control">
+		
+	</form>
+	</div>
+	</div>
+		</div>
+
+		<div class="col-6" style="padding-left:15px;">
+			<div class="card pree" style="">
+		
+		<div class="card-body" style="">
+			<h2 class="card-title text-center"> Sign Up</h2>
+			<br>
+	<form class="form-group" style="">
+		<input type="text" id="hello" name="name" class="form-control" placeholder="Enter Your Name:">
+		<br>
+		<input type="pasword" id="bye" name="pass" class="form-control" placeholder="Enter Your Pasword:">
+		<br>
+		<input type="email" id="sorry" name="ema" class="form-control" placeholder="Enter Your Email:">
+		<br>
+		<input type="text" name="ag" class="form-control"  placeholder="Enter Your Age:">
+		<br>
+		<input type="submit" name="name" class="form-control">
+		
+	</form>
+	</div>
+	</div>
+</div>
+	</div>
+	
+<script type="text/javascript">
+	function validate()
+	{
+		var name=document.getElementById("hello");
+				var pass=document.getElementById("bye");
+				var age=document.getElementById("sorry");
+				if (name.value.length<5) {
+					name.style.border="thick solid #0000FF";
+				}
+
+
+
+
+	}
+</script>
+
+
+</main>
+
+</body>
+</html>
