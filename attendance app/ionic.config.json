@@ -1,0 +1,7 @@
+{
+  "name": "varun",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
